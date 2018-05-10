@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="id.admintravellmate.travellmateapp.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:background="#d70d0d0d"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:srcCompat="@drawable/panah" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:textSize="35sp"
+            android:textColor="#4d94eb"
+            android:layout_width="210dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:textStyle="normal|bold"
+            android:text="TravellMate" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layout1"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#d7fdfcfb"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView2"
+            android:layout_width="290dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="70dp"
+            android:layout_weight="1"
+            android:background="#b7b9b7b5"
+            android:labelFor="@+id/autoCompleteTextView2"
+            android:text="Cari Destinasi..." />
+
+        <Button
+            android:id="@+id/buttonCari"
+            android:layout_width="182dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="#476bc8"
+            android:text="Cari"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout5"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layout4"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#d7e2e1e1"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="5000dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:srcCompat="@drawable/bangkok" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout6"
+        android:layout_width="350dp"
+        android:layout_below="@+id/layout5"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#d7e2e1e1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="0dp"
+            android:gravity="center"
+            android:text="Bangkok (Thailand)"
+            android:textColor="#090a0a"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout7"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layout6"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#d7e2e1e1"
+        android:gravity="top"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonKunjungi"
+            android:layout_width="182dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_weight="1"
+            android:background="#476bc8"
+            android:text="Kunjungi Sekarang!"
+            android:textColor="@android:color/white"
+            android:textSize="9sp"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout8"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layout7"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#d7fcfbfb"
+        android:gravity="top"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout9"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layout8"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#d7e2e1e1"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="5000dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:srcCompat="@drawable/seoul" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout10"
+        android:layout_width="350dp"
+        android:layout_below="@+id/layout9"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#d7e2e1e1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="0dp"
+            android:gravity="center"
+            android:text="Seoul (South Korea)"
+            android:textColor="#090a0a"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout11"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layout10"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#d7e2e1e1"
+        android:gravity="top"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonKunjungi2"
+            android:layout_width="182dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_weight="1"
+            android:background="#476bc8"
+            android:text="Kunjungi Sekarang!"
+            android:textColor="@android:color/white"
+            android:textSize="9sp"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout12"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layout11"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#d7fcfbfb"
+        android:gravity="top"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout13"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layout12"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#d7e2e1e1"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="5000dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:srcCompat="@drawable/tokyo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout14"
+        android:layout_width="350dp"
+        android:layout_below="@+id/layout13"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#d7e2e1e1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="0dp"
+            android:gravity="center"
+            android:text="Tokyo (Japan)"
+            android:textColor="#090a0a"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout15"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layout14"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#d7e2e1e1"
+        android:gravity="top"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonKunjungi3"
+            android:layout_width="182dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_weight="1"
+            android:background="#476bc8"
+            android:text="Kunjungi Sekarang!"
+            android:textColor="@android:color/white"
+            android:textSize="9sp"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout16"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layout15"
+        android:layout_height="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#d7fcfbfb"
+        android:gravity="top"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout17"
+        android:background="#d70d0d0d"
+        android:layout_below="@+id/layout16"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/textView6"
+            android:textSize="15sp"
+            android:textColor="#f9fafc"
+            android:layout_width="300dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:text="Travell Mate © 2017 All Rights Reserved." />
+    </LinearLayout>
+</RelativeLayout>
