@@ -37,7 +37,7 @@ public class KunjungiSeoul extends AppCompatActivity {
 
     @OnClick(R.id.buttonKunjungi1)
     public void setButtonKunjungi1() {
-        Intent intent = new Intent(KunjungiSeoul.this, FormKunjungiSeoul.class);
+        Intent intent = new Intent(KunjungiSeoul.this, FormKunjungiTokyo.FormKunjungiSeoul.class);
         startActivity(intent);
         finish();
     }

@@ -40,4 +40,37 @@ public class FormKunjungiTokyo extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+    public static class FormKunjungiSeoul extends AppCompatActivity {
+        @BindView(R.id.buttonKirim)
+        Button buttonKirim;
+        @BindView(R.id.buttonX)
+        Button buttonX;
+
+        @Override
+        public void onBackPressed() {
+
+        }
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.form_kunjungi);
+            ButterKnife.bind(this);
+        }
+
+        @OnClick(R.id.buttonX)
+        public void setButtonX() {
+            Intent intent = new Intent(FormKunjungiSeoul.this, KunjungiSeoul.class);
+            startActivity(intent);
+            finish();
+        }
+
+        @OnClick(R.id.buttonKirim)
+        public void setButtonKirim() {
+            Intent intent = new Intent(FormKunjungiSeoul.this, KunjungiSeoul.class);
+            startActivity(intent);
+            finish();
+        }
+    }
 }
