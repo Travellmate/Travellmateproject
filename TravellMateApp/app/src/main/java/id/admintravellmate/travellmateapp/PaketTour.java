@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -16,6 +17,8 @@ public class PaketTour extends AppCompatActivity {
     Button buttonKunjungi2;
     @BindView(R.id.buttonKunjungi3)
     Button buttonKunjungi3;
+    @BindView(R.id.imageView1)
+    ImageView imageView1;
 
     @Override
     public void onBackPressed() {
@@ -46,6 +49,13 @@ public class PaketTour extends AppCompatActivity {
     @OnClick(R.id.buttonKunjungi3)
     public void setButtonKunjungi3(){
         Intent intent = new Intent(PaketTour.this, KunjungiTokyo.class);
+        startActivity(intent);
+        finish();
+    }
+
+    @OnClick(R.id.imageView1)
+    public void setImageView1() {
+        Intent intent = new Intent(PaketTour.this, Beranda.class);
         startActivity(intent);
         finish();
     }

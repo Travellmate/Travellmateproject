@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="id.admintravellmate.travellmateapp.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:background="#d70d0d0d"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:srcCompat="@drawable/panah" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:textSize="35sp"
+            android:textColor="#4d94eb"
+            android:layout_width="210dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:textStyle="normal|bold"
+            android:text="TravellMate" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:background="#d7fafafa"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:gravity="center">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_below="@+id/layout2"
+        android:background="#fcfdfd"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:srcCompat="@drawable/korea" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_below="@+id/layout3"
+        android:background="#d7fafafa"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:gravity="center">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout5"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layout4"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#d7e2e1e1"
+        android:gravity="top"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="50dp"
+            android:text="Seoul (South Korea)"
+            android:textStyle="normal|bold"
+            android:gravity="center"
+            android:textColor="#0e0e0e"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout6"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layout5"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#d7e2e1e1"
+        android:gravity="top"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="45dp"
+            android:text="Jumlah Anggota : 3"
+            android:gravity="center"
+            android:textColor="#0e0e0e"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout7"
+        android:layout_below="@+id/layout6"
+        android:background="#d7fafafa"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/buttonGabung"
+            android:layout_width="182dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:layout_weight="1"
+            android:background="#476bc8"
+            android:text="Gabung Group!"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout8"
+        android:layout_below="@+id/layout7"
+        android:background="#d7fafafa"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/buttonChat"
+            android:layout_width="182dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:layout_weight="1"
+            android:background="#476bc8"
+            android:text="Chat"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout9"
+        android:layout_below="@+id/layout8"
+        android:background="#d7fafafa"
+        android:orientation="horizontal"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="5dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            app:srcCompat="@drawable/koreaanggota1" />
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="5dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            app:srcCompat="@drawable/koreaanggota2" />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="5dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            app:srcCompat="@drawable/koreaanggota3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout10"
+        android:layout_below="@+id/layout9"
+        android:background="#d7fafafa"
+        android:orientation="horizontal"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout11"
+        android:layout_below="@+id/layout10"
+        android:background="#d7fafafa"
+        android:orientation="horizontal"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout12"
+        android:layout_below="@+id/layout11"
+        android:background="#d7fafafa"
+        android:orientation="horizontal"
+        android:layout_width="180dp"
+        android:layout_height="5dp"
+        android:gravity="center">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout13"
+        android:background="#d70d0d0d"
+        android:layout_below="@+id/layout12"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/textView10"
+            android:textSize="15sp"
+            android:textColor="#f9fafc"
+            android:layout_width="300dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:text="Travell Mate © 2017 All Rights Reserved." />
+    </LinearLayout>
+
+</RelativeLayout>
